@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Sat Jun 30 20:10:37 EDT 2012
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=biogeo-review.tex
+outputFile=biogeo-review.pdf
+langSpell=en
+markDer=true
+srcDir=
