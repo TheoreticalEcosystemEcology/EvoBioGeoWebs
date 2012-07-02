@@ -15,7 +15,7 @@
 \usetikzlibrary{shapes,backgrounds}
 \usepgfplotslibrary{groupplots}
 
-\usepackage[doi=false,isbn=false,url=false]{biblatex}
+\usepackage[style=tree]{biblatex}
 \bibliography{library}
 
 \title{The evolutionary biogeography of species interactions networks}
@@ -34,20 +34,31 @@
 
 In the most recent years, understanding the evolution of species interaction
 networks in space emerged as a challenging task \parencite{Pillai2011}, to some
-extent because of the lack of an integrative theory \parencite{Urban2008}. Yet, over the last fitfteen
-years, ecologists and evolutionists developped three bodies of litterature upon
-which such a theory can be based. First, we developped tools to analyse the
-structure of species interactions, in simple and complex communities. Second, we
-uncovered the mechanisms involved in species coevolution
-\parencite{Thompson1994a}, including how coevolutionary dynamics should be
-affected by space and environmental heterogenetiy \parencite{Thompson2005}.
+extent because of the lack of an integrative theory \parencite{Urban2008}. Yet,
+over the last fitfteen years, ecologists and evolutionists developped three
+bodies of litterature upon which such a theory can be based. First, we
+developped tools to analyse the structure of species interactions, in simple and
+complex communities. Second, we uncovered the mechanisms involved in species
+coevolution \parencite{Thompson1994a}, including how coevolutionary dynamics
+should be affected by space and environmental heterogenetiy
+\parencite{Thompson2005}.
 Finally, several contrasted hypothesis to explain species distribution patterns
 in space were proposed. As of now, there is still relatively little overlap
 between these three fields (Fig.~\ref{f:venn}). Here, we argue that while a
 theory for the evolutionary biogeography of species interactions can be built by
 increasing overlap between these three fields, there is more to in than that. We
-identify the need to more closely investigate mechanisms involved in species interactions and
-evolution at different scales of organization (individual, population, community), and \ldots 
+identify the need to more closely investigate mechanisms involved in species
+interactions and evolution at different scales of organization (individual,
+population, community), and \ldots
+
+\begin{figure}[htbp]
+   \centering
+   \input{figures/venn-diagram.tex}
+   \caption{The integration between theories about species interaction, coevolution, and biogeography,
+    is a required step to take in order to reach a biogeographic understanding of how species interaction network evolve over
+    spatial extents.}
+   \label{f:venn}
+\end{figure}
 
 Despite the conceptual advance that this paper represents, it is still difficult
 to precisely outline what the theory will ressemble. Identifying patterns
@@ -59,26 +70,23 @@ make such predictions should be better grounded in data, we conclude this paper
 by proposing new ways to approach the sampling of species interactions, allowing
 a better understanding of the underlying evolutionary mechanisms.
 
-\begin{figure}[htbp]
-   \centering
-   \input{figures/venn-diagram.tex}
-   \caption{The integration between theories about species interaction, coevolution, and biogeography,
-    is a required step to take in order to reach a biogeographic understanding of how species interaction network evolve over
-    spatial extents.}
-   \label{f:venn}
-\end{figure}
-
 \section{Processes and mechanisms}
 
 In this section, we review processes and mechanisms belonging to the three
 bodies of litterature, likely to act in the evolution of SINs in space, and
 discuss which should be part of an integrative theory.
 
+The first three paragraphs describe roughly what we know about each of the three
+theories, and how it relates to space / evolution. The last paragraph is
+essentially an appeal to make individuals / populations the relevant unit of
+observation and modelling. All the mechanisms acting at these scales provide a
+unification between both the theories and the scales of organization
+
 \begin{itemize}
-	\item networks
-	\item biogeography 
-	\item coevolution
-	\item (figure with arrows between similar mechanisms)
+	\item Current state of : networks theory
+	\item Current state of : biogeography 
+	\item Current state of : coevolution
+	\item (figure with arrows between similar mechanisms -- tim)
 	\item Right scale for the mechanisms
 		\begin{itemize}
 			\item individual
@@ -91,14 +99,17 @@ discuss which should be part of an integrative theory.
 \section{Patterns}
 
 \begin{itemize}
-	\item scaling of patterns from ind to pop to comm
-	\item not necessarily the same structure at different scales // diff. mecha.
-	\item ecosystems
+    \item How do patterns of interaction \ evolution scale from individuals to
+        communities? Which patterns scale up, and which don't?
+    \item not necessarily the same structure at different scales : which mechanisms will scale up ?
+    \item do we have predictions for ecosystems (nutrient cycling, \ldots)
 \end{itemize}
 
 \section{What to do?}
 
 \subsection{Data}
+
+The goal of this section is to outline what kind of data we need, and why
 
 \begin{itemize}
 	\item Individual data with traits
@@ -107,6 +118,8 @@ discuss which should be part of an integrative theory.
 \end{itemize}
 
 \subsection{Models}
+
+Phil (mostly) will compare different models and what they lack / have 
 
 \begin{itemize}
 	\item Box with the different models
