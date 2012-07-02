@@ -13,6 +13,7 @@
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
 \pgfplotsset{compat=newest}
+\usetikzlibrary{shapes,backgrounds}
 \usepgfplotslibrary{groupplots}
 
 \usepackage[doi=false,isbn=false,url=false]{biblatex}
@@ -31,7 +32,6 @@
 
 
 \section{Why}
-\label{why}
 
 \begin{itemize}
 
@@ -39,20 +39,22 @@
 food webs in space: time to overlap them, but more than the overlap: Venn
 diagram
 
-
 \item Difficult to tell what the theory will look like
-
-\begin{itemize}
-
-\item lack of data
-\item no patterns
-\end{itemize}
-
+	\begin{itemize}
+		\item lack of data
+		\item no patterns
+	\end{itemize}
 
 \end{itemize}
+
+\begin{figure}[htbp]
+   \centering
+   \input{figures/venn-diagram.tex}
+   \caption{example caption}
+   \label{fig:venn}
+\end{figure}
 
 \section{Processes and mechanisms}
-\label{processesandmechanisms}
 
 \begin{itemize}
 	\item networks
