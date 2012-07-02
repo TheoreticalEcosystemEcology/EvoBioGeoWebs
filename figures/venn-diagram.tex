@@ -2,7 +2,7 @@
 \def\secondcircle{(2,3.4) circle (3cm)}
 \def\thirdcircle{(4,0) circle (3cm)}
 
-\begin{tikzpicture}
+\begin{tikzpicture}\sffamily
     \begin{scope}[fill opacity=0.5]
         \fill[red!40] \firstcircle;
         \fill[green!40] \secondcircle;
@@ -12,7 +12,7 @@
         \draw \thirdcircle node [below] {};
     \end{scope}
     %% Draw the labels
-    \draw (5,0) node {\Large Coevolution \cite{Thompson1994}};
+    \draw (5,0) node {\Large Coevolution \cite{Thompson1994a}};
     \draw (2,4.4) node {\Large Biogeography};
     \draw (-1,0) node {\Large Networks \cite{Pascual2006}};
     
@@ -21,6 +21,11 @@
     
     %% References about what we know
     \draw (3.3,2) node {\Large\protect\cite{Thompson2005}};
-    \draw (0.7,2) node {\Large\protect\cite{Gravel2011c}};
+    
+    \draw (-3.5,4.5) node [fill=black!10] (netbiogeo) {\Large \emph{e.g.} \protect\cite{Gravel2011c,Massol2011}};
+    \path [->] (netbiogeo) edge [very thick] (0.3,2);
+    
+    \draw (2,-4.5) node [fill=black!10] (netcoevo) {\Large \emph{e.g.} \protect\cite{Loeuille2005,PoisotPRSLB2012}};
+    \path [->] (netcoevo) edge [very thick] (2,-0.7);
     
 \end{tikzpicture}
