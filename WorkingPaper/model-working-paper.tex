@@ -1,15 +1,19 @@
-\documentclass[10pt,twocolumn]{article}
+\documentclass[12pt]{article}
 
-\usepackage[letterpaper, margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage[letterpaper]{geometry}
 
 \author{Timoth\'ee Poisot \and Philippe Desjardins-Proulx \and Dominique Gravel}
-\title{A general model for coevolution in spatial interaction networks}
+\title{A general model for coevolution in spatialized interaction networks}
 
-\usepackage[sc]{mathpazo}
+\usepackage{kpfonts}
+\usepackage{biblatex}
+\bibliography{library}
 
 \begin{document}
 	
-\maketitle
+\maketitle\doublespacing
 
 \begin{abstract}
 	In this working paper, we outline the basic ingredients for a
@@ -22,10 +26,34 @@
 
 \section{Ingredients of the model}
 
-\section{Speciation and intra-specifici drift}
+The metapopulation framework is ...
+
+Building on these previous results, TTIB built a trophic model of island
+biogeography. This model achieves the overlap between ecological network
+theory and biogeography, but lacks an evolutionary component. It is the goal
+of this paper to descibe how the TTIB model can be coupled to simple
+evolutionary rules, to obtain a phenomenological model of evolution in
+spatialized networks.
+
+\section{Speciation and intra-specific drift}
+
+In our model, each species is defined by a centroïd $C_S$ in the niche space.
+Each population of this species has a given position $C_P$, which allows
+calculating how far this population is from its species centroïd. When
+$\mathrm{d}(C_S,C_P)$ becomes superior to a given treshold, the isolated
+population initiates a new species.
 
 \section{Rules for interaction}
 
+The existence of an interaction follows the same rules as in the niche model
+of WILLIAMS. Each species is identified by its position $n$ on a niche space,
+which can be composed of as many arbitrary continuous quantitative niche axes
+as needed. On each axis, each species has a centroïd $c$, and a range $r$,
+meaning that each species will interact with any other species whose trait
+value falls within $n+c\pm r$.
+
 \section{Conclusion}
+
+\printbibliography
 
 \end{document}
