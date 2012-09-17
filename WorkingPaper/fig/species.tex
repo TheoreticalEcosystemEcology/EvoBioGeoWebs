@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+	\begin{axis}[
+		xlabel={Niche axis 1},
+		ylabel={Niche axis 2},
+		xmin = 0, xmax = 1,
+		ymin = 0, ymax = 1,
+		enlargelimits = 0
+		]
+		%%% Species circles
+		\node[sp, fill=green!20, draw=green!20!black] at (axis cs:0.4,0.3) {};
+		\node[sp, fill=blue!20,draw=blue!20!black] at (axis cs:0.7,0.5) {};
+		\node[sp, fill=red!20,draw=red!20!black] at (axis cs:0.35,0.7) {};
+		
+		%%% Populations
+		\node[pop, fill=green!20!black] (s1p1) at (axis cs:0.42,0.37) {};
+		\node[pop, fill=green!20!black] (s1p2) at (axis cs:0.32,0.29) {};
+		\node[pop, fill=green!20!black] (s1p3) at (axis cs:0.46,0.24) {};
+
+		\node[pop, fill=blue!20!black] (s2p1) at (axis cs:0.68,0.44) {};
+		\node[pop, fill=blue!20!black] (s2p2) at (axis cs:0.74,0.42) {};
+		\node[pop, fill=blue!20!black] (s2p3) at (axis cs:0.70,0.55) {};
+
+		\node[pop, fill=red!20!black] (s3p1) at (axis cs:0.33,0.64) {};
+		\node[pop, fill=red!20!black] (s3p2) at (axis cs:0.41,0.62) {};
+		\node[pop, fill=red!20!black] (s3p3) at (axis cs:0.43,0.71) {};
+
+		%%% Interactions
+		\draw [-] (s3p1) to (s1p2);
+		\draw [-] (s3p2) to (s1p1);
+		\draw [-] (s1p3) to (s2p1);
+		\draw [-] (s1p1) to (s2p1);
+		\draw [-] (s1p3) to (s2p2);
+		\draw [-] (s3p3) to (s2p3);
+		\draw [-] (s3p2) to (s2p3);
+	\end{axis}
+\end{tikzpicture}
